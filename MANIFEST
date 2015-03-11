@@ -1,0 +1,15 @@
+CHANGES
+COPYING
+MANIFEST.in
+setup.cfg
+setup.py
+bin/lshell
+etc/lshell.conf
+etc/logrotate.d/lshell
+lshell/__init__.py
+lshell/checkconfig.py
+lshell/shellcmd.py
+lshell/utils.py
+man/lshell.1
+test/test_functional.py
+test/test_unit.py
