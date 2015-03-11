@@ -42,8 +42,9 @@ choose a list of allowed commands for every limited account.""",
           packages = ['lshell'],
           data_files = [('/etc', ['etc/lshell.conf']),
                         ('/etc/logrotate.d', ['etc/logrotate.d/lshell']),
-                        ('share/doc/lshell',['README.md', 'COPYING', 'CHANGES']),
-                        ('share/man/man1/', ['man/lshell.1']) ],
+                        ('share/doc/lshell',['COPYING', 'CHANGES']),
+                        ],
+	  doc_files = [('share/man/man1/', ['man/lshell.1'])], 
           classifiers=[
             'Development Status :: 5 - Production/Stable',
             'Environment :: Console'

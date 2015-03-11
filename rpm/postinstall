@@ -11,9 +11,10 @@
 if [ "$1" = "1" ] ; then
 
     if ! getent group lshell 2>&1 > /dev/null; then
-        addgroup --system lshell
+        groupadd --system lshell
     fi
-
+    
+    mkdir /var/log/lshell
     chown root:lshell /var/log/lshell/
     chmod 770 /var/log/lshell/
 
