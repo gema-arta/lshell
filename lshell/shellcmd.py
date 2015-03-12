@@ -251,7 +251,8 @@ class ShellCmd(cmd.Cmd, object):
                     if os.path.isdir(item):
                         wilddir.append(item)
                 # sort results
-		wilddir = filter(lambda x: x in self.conf['wildfilter'], wilddir)
+		wildfilter = ['lshell.conf','','/etc/lshell.conf']
+		wilddir = filter(lambda x: x not in wildfilter, wilddir)
                 wilddir.sort()
                 # if any results are returned, pick first one
                 if len(wilddir) >= 1:
